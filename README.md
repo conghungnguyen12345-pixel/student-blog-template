@@ -26,7 +26,8 @@ This template automatically:
 - Builds your blog
 - Converts Markdown into webpages
 - Publishes your site online
-You do not need to configure anything for this to work.
+- The only configuration needed is to set the "Build and deployment" source to "GitHub Actions". This is found in "Settings" ➔ "Pages".
+
 
 ## Do Not Edit These Folders
 These are automatically generated or required for publishing:
