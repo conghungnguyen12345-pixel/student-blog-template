@@ -1,9 +1,9 @@
 ---
-Title: Developing the database for Critique Canvas
-Date: 2026-05-06
-Author: Hung Nguyen
-Summary: Explaining the two tables of our database, the functionality of each field, and the lessons learned from linking them to the application
-Tags: [database, design, sql, models]
+title: Developing the database for Critique Canvas
+date: 2026-05-06
+author: Hung Nguyen
+summary: Explaining the two tables of our database, the functionality of each field, and the lessons learned from linking them to the application
+tags: [database, design, sql, models]
 ---
 
 ## The Database
