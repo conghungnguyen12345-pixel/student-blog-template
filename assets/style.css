@@ -68,12 +68,8 @@ table {
 }
 
 th, td {
-  border: 1px solid light-dark(var(--light-text), var(--dark-text));
+  border: 1px solid #ccc;
   padding: 0.5rem 1rem;
   text-align: left;
-}
-
-th {
-  font-weight: bold;
   background: none;
 }
