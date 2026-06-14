@@ -15,7 +15,7 @@ This post is a reflection on the fully completed Critique Canvas prototype, a pl
 To objectively analyse the performance of the platform, I ran a Lighthouse audit on the homepage using Chrome DevTools in desktop mode. The results were:
 
 | Category | Score |
-|----------|-------|
+|---|---|
 | Performance | 97 |
 | Accessibility | 96 |
 | Best Practices | 74 |
@@ -25,7 +25,7 @@ I did a testing trial and uploaded an image. The speed was fast, similar to a no
 
 Lighthouse identified three crucial issues. The first is render-blocking requests with estimated savings of 770 milliseconds. The Google Fonts import loads before the page renders, slowing First Contentful Paint. This reflects a planning gap where our team prioritised visual aesthetic over load performance. In production, this could be fixed by using font-display: swap or self-hosting the fonts. In addition to that, 41 KiB of unused CSS and 108 KiB of unused JavaScript were detected because global stylesheets and libraries are loaded on all pages rather than on demand.
 
-The lowest score is the Best Practices score of 74, since the software is mostly running over HTTP instead of HTTPS. This is expected for a localhost prototype, not a fundamental design fault. The documented browser failures to console were also helpful in that they showed edge circumstances the annotation canvas JavaScript wasn't handling, and that will need to be rectified before any meaningful deployment.
+The lowest score is the Best Practices score of 74, since the software is mostly running over HTTP instead of HTTPS. This is expected for a localhost prototype, not a fundamental design fault. The documented browser failures to console were also helpful in that they showed edge circumstances the annotation canvas JavaScript wasn’t handling, and that will need to be rectified before any meaningful deployment.
 
 The strong performance profile reflects an intentional decision made during planning. Our team chose server-side rendering with HTMX partial updates rather than a heavy client-side framework, therefore ensuring our page responds to user interaction without requiring a reload. The near-zero blocking time validates this choice.
 
@@ -35,21 +35,21 @@ I also conducted a user testing session with a friend to evaluate the user exper
 
 The annotation feature fared especially well. My friend said the instructions were simple and easy to follow, and that the crosshair cursor made it immediately obvious that clicking the image would set a pin. The filter pills were equally intuitive. My friend observed that when someone sees a dropdown with categories, their mind naturally goes to understanding that this is a filter feature, which is consistent with how we designed it.
 
-Two usability problems were found. The first problem was that you could not delete an annotation. My friend tried to erase their review, but it wouldn't work. This shows there was a gap in our original planning. We spent so much time designing the pin and feedback features to work correctly that we forgot about deletion. But that should have been a given from the outset. Second, the Story Chain feature was confusing as it required one person to submit before the next could progress. I was largely focused on Critique Canvas and Collab Roulette and didn't spend as much time testing Story Chain; therefore, this was not noticed during development.
+Two usability problems were found. The first problem was that you could not delete an annotation. My friend tried to erase their review, but it wouldn’t work. This shows there was a gap in our original planning. We spent so much time designing the pin and feedback features to work correctly that we forgot about deletion. But that should have been a given from the outset. Second, the Story Chain feature was confusing as it required one person to submit before the next could progress. I was largely focused on Critique Canvas and Collab Roulette and didn't spend as much time testing Story Chain; therefore, this was not noticed during development.
 
 Only one person was tested, which limits the accuracy of these findings. In a larger-scale evaluation, three to five users with a high level of knowledge, including practising artists with no technical background, would be included to better represent the platform's intended audience.
 
 For accessibility, our team conducted a WCAG AA checklist and keyboard navigation test:
 
 | WCAG Criterion | Result |
-|----------------|--------|
+|---|---|
 | Images have alt text | Pass |
 | Form inputs have labels | Pass |
 | Tab navigation visible | Pass, orange outline on all elements |
 | Skip link present | Pass, appears on first Tab press |
 | Colour contrast sufficient | Partial fail, grey text flagged by Lighthouse |
 
-Keyboard navigation testing showed that login, gallery navigation and opening an artwork can all be done using only Tab and Enter. However, the annotation form's category dropdown and submit button were not keyboard accessible; therefore, a keyboard-only user could not complete the entire annotation workflow without a mouse.
+Keyboard navigation testing showed that login, gallery navigation and opening an artwork can all be done using only Tab and Enter. However, the annotation form’s category dropdown and submit button were not keyboard accessible; therefore, a keyboard-only user could not complete the entire annotation workflow without a mouse.
 
 The grey writing that fails the contrast test is a hint that something is wrong with how we prepare for design. The dark purple look was thought up by our team, and the contrast issue only arose once Lighthouse selected it in the review. Contrast ratios should have been a design constraint from the start, not something we learned at the end.
 
@@ -72,3 +72,4 @@ In addition to the original design, our team added two features: Collab Roulette
 ## Conclusion
 
 Critique Canvas successfully delivered its core value as a platform where artists can receive spatially anchored, pinpointed feedback on their work. The Lighthouse audit, WCAG checklist, keyboard navigation test, and friend user testing all confirm that the platform performs well. The crucial areas for improvement are keyboard focus in the annotation popup, annotation deletion, colour contrast for secondary text, and the Story Chain submission flow. These are all achievable and would meaningfully raise the quality of the platform in a future iteration.
+
