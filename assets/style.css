@@ -61,3 +61,19 @@ ul.tags-list {
 ul.post-list{
     list-style: none;
 }
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+th, td {
+  border: 1px solid light-dark(var(--light-text), var(--dark-text));
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+
+th {
+  font-weight: bold;
+  background: light-dark(var(--light-accent), var(--dark-accent));
+}
