@@ -75,5 +75,5 @@ th, td {
 
 th {
   font-weight: bold;
-  background: light-dark(var(--light-accent), var(--dark-accent));
+  background: none;
 }
