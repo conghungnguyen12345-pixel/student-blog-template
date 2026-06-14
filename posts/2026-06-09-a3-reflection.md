@@ -59,7 +59,7 @@ The annotation system was much harder to use than we thought. The original idea 
 
 The second improvement I would prioritise is keyboard accessibility of the annotation form. The popup appears dynamically after a canvas click, but focus is not programmatically moved into it, making the dropdown and submit button unreachable via Tab. The fix is to use JavaScript to set focus on the first form element when the popup opens, which would ensure the core annotation workflow reaches WCAG AA compliance.
 
-If I were to start this project over, I would build a moodboard to highlight the style and aesthetic of the platform, since I believed the design and the colour combination needed more time to develop. I would also be more hands-on with all additional features rather than focusing primarily on Critique Canvas and Collab Roulette, ensuring that every feature receives equal testing attention before submission.
+If I were to start this project over, I would build a moodboard to highlight the style and aesthetic of the platform, since I believed the design and the colour combination needed more time to evolve. I would also be more hands-on with all additional features rather than focusing primarily on Critique Canvas and Collab Roulette, therefore ensuring that every feature receives equal testing attention before submission.
 
 ## Retrospective Assessment of Functional Requirements
 
