@@ -15,7 +15,7 @@ This post is a reflection on the fully completed Critique Canvas prototype, a pl
 To objectively analyse the performance of the platform, I ran a Lighthouse audit on the homepage using Chrome DevTools in desktop mode. The results were:
 
 | Category | Score |
-|---|---|
+|----------|-------|
 | Performance | 97 |
 | Accessibility | 96 |
 | Best Practices | 74 |
@@ -42,7 +42,7 @@ Only one person was tested, which limits the accuracy of these findings. In a la
 For accessibility, our team conducted a WCAG AA checklist and keyboard navigation test:
 
 | WCAG Criterion | Result |
-|---|---|
+|----------------|--------|
 | Images have alt text | Pass |
 | Form inputs have labels | Pass |
 | Tab navigation visible | Pass, orange outline on all elements |
